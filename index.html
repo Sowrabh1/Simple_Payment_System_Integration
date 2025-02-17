@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Payment System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <h1>Car Tenancy</h1>
+        <div class="form">
+            <div class="flex m20">
+                <label>Full Name*</label>
+                <input type="text" name="name" placeholder="Full Name" class="m10 name">
+                <small class="error name-error"></small>
+            </div>
+            <div class="flex m20">
+                <label>WhatsApp Number (With ISD)*</label>
+                <input type="text" name="phone" placeholder="Ex- +919064973840" class="m10 number">
+                <small class="error number-error"></small>
+            </div>
+            <div class="flex m20">
+                <label>Email*</label>
+                <input type="email" name="email" placeholder="Email" class="m10 email">
+                <small class="error email-error"></small>
+            </div>
+            <div class="flex m20">
+                <button class="generate_qr">NEXT</button>
+            </div>
+        </div>
+        <div class="qr_code m20">
+            <p>Scan the QR Code with any UPI App and pay the Amount</p>
+            <center><img src="assests/Scanner.jpg" class="get_qr m10"></center>
+            <center><img src="assests/phonepay.jpg" class="im m10"></center>
+            <div class="flex m20">
+                <label>UTR/REFERENCE/TRANSACTION ID**</label>
+                <input type="text" name="transaction_id" placeholder="UTR/REFERENCE/TRANSACTION ID" class="m10 id">
+                <small class="error id-error"></small>
+            </div>
+            <button class="download_now m20">Payment</button>
+        </div>
+    </section>
+</body>
+</html>
